@@ -5,6 +5,7 @@ import { SearchComponent } from './pages/search/search.component';
 import { CharacterComponent } from './pages/character/character.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ListComponent } from './pages/list/list.component';
+import { DbzRoutingModule } from './dbz-routing.module';
 
 
 
@@ -17,7 +18,8 @@ import { ListComponent } from './pages/list/list.component';
     ListComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    DbzRoutingModule
   ]
 })
 export class DbzModule { }

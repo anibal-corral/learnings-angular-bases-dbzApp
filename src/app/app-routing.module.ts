@@ -9,7 +9,10 @@ const routes:Routes=[
 path:'auth',
 loadChildren:()=>import('./auth/auth.module').then(m=>m.AuthModule)
 },
-
+{
+  path:'characters',
+  loadChildren:()=>import('./dbz/dbz.module').then(m=>m.DbzModule)
+  },
   {
     path:'404',
     component:ErrorPageComponent
