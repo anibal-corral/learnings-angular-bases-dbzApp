@@ -7,6 +7,9 @@ import { HomeComponent } from './pages/home/home.component';
 import { ListComponent } from './pages/list/list.component';
 import { DbzRoutingModule } from './dbz-routing.module';
 
+import {FlexLayoutModule} from '@angular/flex-layout';
+import { MaterialModule } from '../material/material.module';
+
 
 
 @NgModule({
@@ -19,7 +22,10 @@ import { DbzRoutingModule } from './dbz-routing.module';
   ],
   imports: [
     CommonModule,
-    DbzRoutingModule
+    FlexLayoutModule,
+    MaterialModule,
+    DbzRoutingModule,
+    
   ]
 })
 export class DbzModule { }
